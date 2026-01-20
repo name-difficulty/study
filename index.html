@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEllO</title>
+</head>
+<body >
+<!-- 
+    <div class="box"></div>
+    <div class="box1"></div>
+    <div class="box"></div>
+    <style>
+        .box{
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+        }
+        .box1{
+            margin-top: 10px;
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+    <input type="text">    <input type="text">
+    <div>niahi</div>
+    <H1>HEllo world</H1> -->
+    <div class="todo-app">    <!--白框-->
+        <div class="title">xxx的Todo App</div> <!--标题-->
+
+        <div class="todo-from"><!--输入框和按钮-->
+            <input class="todo-input" type="text" placeholder="Add a todo">
+            <div class="todo-button">
+                add todo
+            </div>
+        </div>
+
+        <div class="item completed"><!--项目-->
+            <div><!--为了使选择框和吃饭在一起-->
+                <input type="checkbox">
+                <span class="name">吃饭</span>
+                <!--span是横着排；div是竖着排-->
+            </div>
+            
+            <div class="del">del</div>
+        </div>
+
+        <div class="item"><!--项目-->
+            <div><!--为了使选择框和吃饭在一起-->
+                <input type="checkbox">
+                <span class="name">吃饭</span>
+                <!--span是横着排；div是竖着排-->
+            </div>
+            
+            <div class="del">del</div>
+        </div>
+
+        <div class="item"><!--项目-->
+            <div><!--为了使选择框和吃饭在一起-->
+                <input type="checkbox">
+                <span class="name">吃饭</span>
+                <!--span是横着排；div是竖着排-->
+            </div>
+            
+            <div class="del">del</div>
+        </div>
+    </div>
+
+    <style>
+        .completed{
+            text-decoration: line-through;
+            opacity: 0.4;
+            /* 划线效果和透明度 */
+        }
+        .del{
+            color: red;
+        }
+        .item{
+            /* margin-top: 20px;
+            margin-left: 30px; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            height: 50px;
+            /* line-height: 50px; */
+            /* border-radius: 0 20px 20px 0; */
+            box-sizing: border-box;
+            margin: 8px auto;
+            padding: 16px;
+            border-radius: 20px;
+            box-shadow: rgba(149,157,165, 0.2) 0px 8px 20px;
+        }
+        .todo-button{
+            width: 100px;
+            height: 52px;
+            line-height: 52px;
+            border-radius: 0 20px 20px 0;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+            background: linear-gradient(to right, rgb(113, 65, 168), rgba(44, 114, 251, 1));
+            color: #ffff;
+        }
+        .todo-input{
+            margin-bottom: 20px;
+            border: 1px solid #dfe1e5;
+            outline: none;
+            width: 60%;
+            height: 50px;
+            border-radius: 20px 0 0 20px;
+            padding-left: 15px;
+        }
+        .todo-from{
+            display: flex;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        body{
+            /* background: linear-gradient(to right, purple, blue); */
+            background: linear-gradient(to right, rgb(113, 65, 168), rgba(44, 114, 251, 1));
+        }
+
+        .todo-app{
+            padding-top: 30px;
+            box-sizing: border-box;
+            width: 98%;
+            height: 500px;
+            background-color: #ffff;
+            border-radius: 20px;
+            margin-top: 40px;
+            margin-left: 1%;
+        }
+        .title {
+            font-size: 30px;
+            font-weight: 700px;
+            text-align: center;
+            
+        }
+    </style>
+</body>
+</html>
